@@ -10,6 +10,11 @@ typedef enum {
     CMD_UNRECOGNIZED,
 } CommandType;
 
+// Enum for changes which uses an int mask to check the bits for each field a ticket has
+
+typedef struct {
+} CommandTree;
+
 CommandType parse_command(const char *input);
 
 bool save_ticket(const Ticket *ticket);

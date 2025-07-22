@@ -15,6 +15,7 @@ typedef struct {
     unsigned int ticket_id;
     char *title;
     char *description;
+    char *postmortem;
     TicketStatus status;
     TicketPriority priority;
 } Ticket;
