@@ -2,6 +2,9 @@
 #include <stdbool.h>
 
 #define CMD_ADD_LITERAL "add"
+#define CMD_EDIT_LITERAL "edit"
+#define CMD_GET_LITERAL "get"
+#define CMD_UNRECOGNIZED_LITERAL "unrecognized"
 
 typedef enum {
     CMD_ADD,
@@ -9,11 +12,6 @@ typedef enum {
     CMD_GET,
     CMD_UNRECOGNIZED,
 } CommandType;
-
-// Enum for changes which uses an int mask to check the bits for each field a ticket has
-
-typedef struct {
-} CommandTree;
 
 CommandType parse_command(const char *input);
 
